@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Adds more baby mobs!",
+    "name": "Baby Mobs Addon v1.0.1",
+    "uuid": "989d394c-7c47-47b5-bfd1-fadd739d6d0d",
+    "version": [
+      1,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Adds more baby mobs!",
+      "type": "data",
+      "uuid": "728cb465-acca-4c45-9e8a-16c86c936319",
+      "version": [
+        1,
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Adds more baby mobs! You are the baby in this add-on!",
+    "name": "Baby Mobs Addon with Baby Player v1.0.1",
+    "uuid": "f47d96ad-43e5-4299-9c94-807c808208c9",
+    "version": [
+      1,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Adds more baby mobs! You are the baby in this add-on!",
+      "type": "data",
+      "uuid": "8cccad01-8e00-47c7-94d8-91de644977a3",
+      "version": [
+        1,
+        0,
+        1
+      ]
+    }
+  ]
+}
