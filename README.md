@@ -1,4 +1,4 @@
 # BabyMobsAddon
  This add-on adds the baby form of many mobs, such as baby creepers, baby skeletons, baby endermen, and more. While similar add-ons already exist, they are either outdated or no longer available. In this add-on, you can find them in the world, or spawn them with spawn eggs or commands.
 
-Download it here: https://mcpedl.com/baby-mobs-addon/
+Download it [HERE](https://github.com/YutaYamamoto212/BabyMobsAddon/releases/tag/v1.0.2)!
