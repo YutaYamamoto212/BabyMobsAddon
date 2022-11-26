@@ -189,36 +189,67 @@
         }
       },
       "minecraft:interact": {
-        "interactions": {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "hand",
-                  "subject": "other",
-                  "value": "flint_and_steel"
-                },
-                {
-                  "test": "has_component",
-                  "operator": "!=",
-                  "value": "minecraft:explode"
-                }
-              ]
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "flint_and_steel"
+                  },
+                  {
+                    "test": "has_component",
+                    "operator": "!=",
+                    "value": "minecraft:explode"
+                  }
+                ]
+              },
+              "event": "minecraft:start_exploding_forced",
+              "target": "self"
             },
-            "event": "minecraft:start_exploding_forced",
-            "target": "self"
+            "hurt_item": 1,
+            "swing": true,
+            "play_sounds": "ignite",
+            "interact_text": "action.interact.creeper"
           },
-          "hurt_item": 1,
-          "swing": true,
-          "play_sounds": "ignite",
-          "interact_text": "action.interact.creeper"
-        }
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "fire_charge"
+                  },
+                  {
+                    "test": "has_component",
+                    "operator": "!=",
+                    "value": "minecraft:explode"
+                  }
+                ]
+              },
+              "event": "minecraft:start_exploding_forced",
+              "target": "self"
+            },
+            "use_item": true,
+            "play_sounds": "mob.ghast.fireball",
+            "interact_text": "action.interact.creeper"
+          }
+        ]
       },
       "minecraft:despawn": {
         "despawn_from_distance": {}
