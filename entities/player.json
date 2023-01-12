@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.20",
+  "format_version": "1.18.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:player",
@@ -47,7 +47,11 @@
     },
 
     "components": {
-      "minecraft:experience_reward": {
+      "minecraft:is_baby": {},
+      "minecraft:scale": {
+        "value": 0.5
+      },
+	  "minecraft:experience_reward": {
         "on_death": "Math.Min(query.player_level * 7, 100)"
       },
       "minecraft:type_family": {
@@ -65,7 +69,7 @@
       "minecraft:can_climb": {
       },
       "minecraft:movement": {
-        "value": 0.1
+        "value": 0.15
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -82,13 +86,13 @@
       "minecraft:exhaustion_values": {
         "heal": 6,
         "jump": 0.05,
-        "sprint_jump": 0.2,
+        "sprint_jump": 0.3,
         "mine": 0.005,
         "attack": 0.1,
         "damage": 0.1,
         "walk": 0.0,
-        "sprint": 0.1,
-        "swim": 0.01
+        "sprint": 0.15,
+        "swim": 0.015
       },
       "minecraft:player.saturation": {
         "value": 5,

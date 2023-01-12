@@ -14,7 +14,7 @@
           "value": 0.5
         },
         "minecraft:movement": {
-          "value": 0.375
+          "value": 0.45
         },
 		"minecraft:experience_reward": {
           "on_death": "query.last_hit_by_player ? 12 : 0"
